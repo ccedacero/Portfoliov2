@@ -10,6 +10,14 @@
   <meta name="author" content="Cristian Cedacero">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key">
+   grecaptcha.ready(function() {
+       grecaptcha.execute('6Ld3scQZAAAAALbI4nMfIByrv7GjjVGUQV0-oPg3', {action: 'homepage'})
+       .then(function(token) {
+         document.getElementById('captchaResponse').value = token;
+       });
+     });
+  </script>
   <title>Cristian Cedacero's Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/style.css">
@@ -23,11 +31,11 @@
 
   <!-- Navbar -->
   <nav id="navbar" class="nav">
-    <h1 class="logo">CCedacero</h1>
+    <a class="logo" href="./index.html">CCEDACERO</a>
     <ul class="nav_links">
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./About.html">About</a></li>
-      <li><a href="./index.html#contact">Contact</a></li>
+      <li><a class="left" href="./index.html">Home</a></li>
+      <li><a class="left" href="./About.html">About</a></li>
+      <li><a class="left" href="./index.html#contact">Contact</a></li>
     </ul>
   </nav>
 
@@ -100,86 +108,11 @@ applications, interviews and allowing them to connect with other engineers throu
           upcoming buses information.
             </p>
             <p>
-              <a class="description-btn" target="_blank" href="https://www.youtube.com/watch?v=zymhOk7uurQ">VIEW DEMO</a>
+              <a class="description-btn" style="background-color: #CE672D" target="_blank" href="https://www.youtube.com/watch?v=zymhOk7uurQ">VIEW DEMO</a>
             </p>
             
             </div>
           </div>
-  </section>
-            <!-- <div>
-            <div class="project-image" >
-            <img src="./images/comosedice2.png">
-              </div>
-                <h2>Como Se Dice?</h2>
-                <p>A platform to help spanish speaking farm workers learn English. 
-                  I parsed Berkley’s Agricultural Personnel Management english learning resources to create a centralized and interactive location to help farm workers learning English. 
-                </p>
-                </div>
-              </div> -->
-          <!-- <p id="description">FaveBus is a personal project that allows 
-            users to track their favorite buses and 
-            bus stations in New York City. An updated version
-            for public use will be deployed this fall. For a walkthrough video,
-            and description, see github link. 
-          </p> -->
-          <!-- <div class="project-skills">
-            <span class="skill-card">Ruby</span>
-            <span class="skill-card">Ruby on Rails</span>
-            <span class="skill-card">BootStrap</span>
-            <span class="skill-card">Bcrypt</span>
-            <span class="skill-card">Faker</span>
-          </div> -->
-          <!-- <div class="project-links">
-            <a href="https://github.com/ccedacero/favebus" class="project-link">
-            <img src="./images/github.svg">
-            </a>
-          </div> -->
-          <!-- </div> -->
-          <!-- <div class="img-cont" >
-            <img src="./images/restaurant.png">
-              </div>
-              <div class="img-text">
-                <h3>Neighbor's-Kitchen</h3>
-              <p id="description">Neighbor's Kitchen is a demo app 
-                that connects NYC cooks and chefs with food enthusiasts,
-                allowing cooks to increase their local presence while giving 
-                food enthusiasts the opportunity to experience new and unique foods from home.
-                This is a personal project collaboration
-                with a friend. For more details,
-                and description, see github link. 
-              </p>
-              <div class="project-skills">
-                <span class="skill-card">Vanilla JavaScript</span>
-                <span class="skill-card">Ruby on Rails</span>
-                <span class="skill-card">BootStrap</span>
-                <span class="skill-card">CSS3</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/ccedacero/Neighbor-s-Kitchen" class="project-link">
-                <img src="./images/github.svg">
-                </a>
-              </div>
-              </div> -->
-              <!-- <div class="img-cont" >
-                <img src="./images/covid-19.png">
-                  </div>
-                  <div class="img-text">
-                    <h3>Documenting Corona</h3>
-                  <p id="description">I created documenting corona as a way to track and
-                    easily locate Covid-19 stats for different states, and countries around the world.
-                    You can see live version <a href="documentingcorona" style="font-weight: 700;">here.</a>
-                    For sourcecode, see github link. 
-                  </p>
-                  <div class="project-skills">
-                    <span class="skill-card">Vanilla JavaScript</span>
-                    <span class="skill-card">HTML5</span>
-                    <span class="skill-card">CSS3</span>
-                  </div>
-                  <div class="project-links">
-                    <a href="https://github.com/ccedacero/Neighbor-s-Kitchen" class="project-link">
-                    <img src="./images/github.svg">
-                    </a>
-                  </div> -->
   </section>
   <!--  End Project Section -->
 
@@ -187,36 +120,45 @@ applications, interviews and allowing them to connect with other engineers throu
 
   <section id="contact" class="contact-section">
     <div class="contact-section-header">
-      <h2>Let's work together...</h2>
-      <p>Let me help you build your next project!</p>
+      <h2>🚀Let's build together 👨‍💻</h2>
+
+    <form action="https://getform.io/f/481f4877-9e89-42c3-99e8-b941cd7f067a" method="POST">
+  <label for="name">Name</label>
+  <input required type="text" name="name" placeholder="Name">
+  <label for="email">Email</label>
+  <input required type="email" name="email" placeholder="email@gmail.com">
+  <label for="message">Message</label>
+  <textarea required name="message" placeholder="Say hi!.." style="height:200px"></textarea>
+  <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
+  <input type="submit">
+
+</form>
     </div>
-    <div class="contact-links">
-      <a href="https://www.linkedin.com/in/ccedacero/" target="_blank" class="btn contact-details"><i
-          class="fab fa-linkedin-in"></i> Linked-in</a>
-      <a id="profile-link" href="https://github.com/ccedacero" target="_blank" class="btn contact-details"><i
-          class="fab fa-github"></i> GitHub</a>
-      <a href="https://twitter.com/ccedacero" target="_blank" class="btn contact-details"><i class="fab fa-twitter"></i>
-        Twitter</a>
-      <a href="mailto:example@example.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
-    </div>
+   
   </section>
   <!-- End contact section -->
 
 
   <!-- Start Footer section -->
   <footer>
-    <p>
-      CC
-    </p>
-    <p>
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/ccedacero/" target="_blank" class="btn contact-details"><i
+          class="fab fa-linkedin-in"></i> Linked-in</a>
+      <a id="profile-link" href="https://github.com/ccedacero" target="_blank" class="btn contact-details"><i
+          class="fab fa-github"></i> GitHub</a><br>
+      <a href="https://twitter.com/ccedacero" target="_blank" class="btn contact-details"><i class="fab fa-twitter"></i>
+        Twitter</a>
+      <div class="copy"> 
+
       &copy; Created by
       <a href="#" target="_blank">Cristian Cedacero <i class="fas fa-code"></i></a>
     </p>
+  </div>
+  </div>
   </footer>
 
-  <!-- End Footer section
+ <!-- End Footer section -->
 
   <script src="/js/script.js" async defer></script>
 </body>
-
-</html> -->
+</html>
