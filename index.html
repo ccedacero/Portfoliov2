@@ -19,6 +19,7 @@
      });
   </script>
   <title>Cristian Cedacero's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -34,8 +35,8 @@
     <a class="logo" href="./index.html">CCEDACERO</a>
     <ul class="nav_links">
       <li><a class="left" href="./index.html">Home</a></li>
-      <li><a class="left" href="./About.html">About</a></li>
-      <li><a class="left" href="./index.html#contact">Contact</a></li>
+      <li><a class="left" href="#about-section">About</a></li>
+      <li><a class="left" href="#contact">Contact</a></li>
     </ul>
   </nav>
 
@@ -52,7 +53,7 @@
       <!-- <span class="skills">Dev - Runner - RPCV</span> -->
       <!-- <h2>About me</h2> -->
       <div class="intro-grid">
-        <p class="description">I'm a software engineer that enjoys building solutions to improve people's lives. On my free time, you can find me enjoying the great outdoors🏃‍♂️
+        <p>I'm a software engineer that enjoys building solutions to improve people's lives. On my free time, you can find me enjoying the great outdoors🏃‍♂️
         </p>
       </div>
   </section>
@@ -69,13 +70,21 @@
             <p class="description">A platform to help spanish speaking farm workers learn English. 
               I parsed Berkley’s Agricultural english learning resources to create a centralized and interactive location for English learning. 
             </p>
-            <p>
+            <div class="project-skills">
+            <span class="skill-card">HTML5</span>
+            <span class="skill-card">CSS3</span>
+            <span class="skill-card">Material-ui</span>
+            <span class="skill-card">JavaScript ES6</span>
+            <span class="skill-card">React.js</span>
+            <span class="skill-card">Ruby on Rails</span>
+            <span class="skill-card">Google APIs</span>
+            <span class="skill-card">Charts.js</span>
+          </div>
+            <p class="btn-paragraph">
               <a class="description-btn" target="_blank" href="https://www.youtube.com/watch?v=zymhOk7uurQ">VIEW DEMO</a>
             </p>
-            
             </div>
-          </div>
-  </section>
+    </section>
   <section class="sojohub">
     <div class="projects-grid">
 
@@ -88,12 +97,22 @@
               A platform that streamlines the job application process for software engineers, keeping track of their
 applications, interviews and allowing them to connect with other engineers through forums.
             </p>
-            <p>
+            <div class="project-skills">
+              <span class="skill-card">HTML5</span>
+              <span class="skill-card">CSS3</span>
+              <span class="skill-card">Material-ui</span>
+              <span class="skill-card">JavaScript ES6</span>
+              <span class="skill-card">React.js</span>
+              <span class="skill-card">Ruby on Rails</span>
+              <span class="skill-card">Google APIs</span>
+              <span class="skill-card">Charts.js</span>
+            </div>
+            <p class="btn-paragraph">
               <a class="description-btn" target="_blank" href="https://www.youtube.com/watch?v=zymhOk7uurQ">VIEW DEMO</a>
             </p>
             
             </div>
-          </div>
+          <!-- </div> -->
   </section>
   <section class="favebus">
     <div class="projects-grid">
@@ -107,7 +126,17 @@ applications, interviews and allowing them to connect with other engineers throu
               An app that uses NYC’s MTA’s bus tracking API to provide users with real time bus arrival and station
           upcoming buses information.
             </p>
-            <p>
+            <div class="project-skills">
+              <span class="skill-card">HTML5</span>
+              <span class="skill-card">CSS3</span>
+              <span class="skill-card">Material-ui</span>
+              <span class="skill-card">JavaScript ES6</span>
+              <span class="skill-card">React.js</span>
+              <span class="skill-card">Ruby on Rails</span>
+              <span class="skill-card">Google APIs</span>
+              <span class="skill-card">Charts.js</span>
+            </div>
+            <p class="btn-paragraph"> 
               <a class="description-btn" style="background-color: #CE672D" target="_blank" href="https://www.youtube.com/watch?v=zymhOk7uurQ">VIEW DEMO</a>
             </p>
             
@@ -115,14 +144,53 @@ applications, interviews and allowing them to connect with other engineers throu
           </div>
   </section>
   <!--  End Project Section -->
-
+  <!--  Start About Section -->
+  <section id="about-section" class="about-landing">
+    <div class="about-txt">
+      <span class="full-text">About me</span>
+      <span class="short-text">About me</span>
+      <!-- <p>A Front-End-Developer</p> -->
+      <hr class="star-light">
+      <!-- ::after -->
+      </hr>
+      <!-- <span class="skills">Dev - Runner - RPCV</span> -->
+      <!-- <h2>About me</h2> -->
+      <img class="round" src="./images/me.png" alt="cristian cedacero portrait">
+      <div class="about-grid">
+        <div>
+        <p>Hi! My name is Cristian and I'm a software developer, avid runner, and lifelong volunteer. I've always
+          enjoyed working to help others, and after college I served as a Peace Corps volunteer in Guatemala.
+          Truly the "toughest job you'll ever love",my job included training teachers, building classrooms and hand
+          washing stations, and running away from packs of street dogs.
+        </p>
+        <div id="logos_div">
+          <h3>Stuff I've written</h3>
+        <a href="https://dev.to/ccedacero" target="_blank">
+        <img id="devto_logo" src="./devto.svg" >
+        </a>
+        <a href="https://medium.com/@cristian.cedacero" target="_blank">
+        <img id="medium_logo" src="./monogram-medium.svg"">
+        </a>
+      </div>
+      </div>
+        <p>During my time abroad and at Peace Corps headquarters, I discovered that I could use my IT knowledge to
+          automate and improve processes and help make people's lives easier. I saw the awe that technology brings to
+          remote communities and the profound impact it can have.
+          <br><br>
+          This led me to realize that I could combine my life long passion for tinkering with technology and helping
+          others and transition to a career in software development. With software engraved in all aspects of
+          our lives, there is no better way to make a difference and reach millions than writing the code that will
+          shape our future.
+          </p>
+      </div>
+    </section>
+    <!--  End About Section -->
+  
   <!-- Start Contact Section -->
-
   <section id="contact" class="contact-section">
     <div class="contact-section-header">
       <h2>🚀Let's build together 👨‍💻</h2>
-
-    <form action="https://getform.io/f/481f4877-9e89-42c3-99e8-b941cd7f067a" method="POST">
+  <form action="https://getform.io/f/481f4877-9e89-42c3-99e8-b941cd7f067a" method="POST">
   <label for="name">Name</label>
   <input required type="text" name="name" placeholder="Name">
   <label for="email">Email</label>
@@ -130,15 +198,16 @@ applications, interviews and allowing them to connect with other engineers throu
   <label for="message">Message</label>
   <textarea required name="message" placeholder="Say hi!.." style="height:200px"></textarea>
   <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
+  <div class="submit-div">
   <input type="submit">
-
-</form>
-    </div>
-   
-  </section>
+<!-- </div input> -->
+  </div>
+   </form>
+   </div>
+ </section>
   <!-- End contact section -->
 
-
+ 
   <!-- Start Footer section -->
   <footer>
     <div class="contact-links">
@@ -160,5 +229,5 @@ applications, interviews and allowing them to connect with other engineers throu
  <!-- End Footer section -->
 
   <script src="/js/script.js" async defer></script>
-</body>
+  </body>
 </html>
