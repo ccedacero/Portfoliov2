@@ -132,12 +132,61 @@ h2 {
   text-align: center;
 }
 
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 50%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* Animation */
+.line-1 {
+  position: relative;
+  /* top: 50%; */
+  /* width: 24em; */
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 30%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
 .full-text {
   font-size: 6rem;
   font-family: "ObjectSans", "Montserrat", sans-serif;
   text-align: center;
   font-weight: 500;
-  /* margin-top: -7rem; */
+  border-bottom: solid #3cc4cb;
 }
 
 .short-text {
@@ -145,6 +194,7 @@ h2 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font-weight: 700;
+  border-bottom: solid #3cc4cb;
 }
 /* // Hide short text by default (resolution > 1200px) */
 
@@ -155,8 +205,8 @@ h2 {
 #introbtn {
   margin-top: 7rem;
   /* box-shadow: 0px 1px 0px 0px #f0f7fa; */
-  background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
-  background-color: #33bdef;
+  background: linear-gradient(to bottom, #00adb5 5%, #00adb5 100%);
+  background-color: #3cc4cb;
   border-radius: 6px;
   border: 1px solid #057fd0;
   display: inline-block;
@@ -172,7 +222,7 @@ h2 {
 
 #introbtn:hover {
   background: linear-gradient(to bottom, #019ad2 55%, #33bdef 100%);
-  background-color: #019ad2;
+  background-color: #3cc4cb;
 }
 #introbtn:active {
   position: relative;
@@ -227,6 +277,15 @@ p {
     color: #fff;
     padding: 10rem;
   }
+
+  .Neighbors {
+    background-color: #a47648;
+    min-height: 120vh;
+    overflow: hidden;
+    color: #fff;
+    padding: 10rem;
+  }
+
   .contact-links {
     width: 47%;
   }
@@ -325,7 +384,7 @@ a {
 .nav {
   display: flex;
   justify-content: flex-end;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
@@ -559,6 +618,43 @@ hr.star-primary:after {
     color: #fff;
     /* padding: 10rem; */
   }
+
+  .Neighbors {
+    background-color: #a47648;
+    min-height: 100vh;
+    overflow: hidden;
+    color: #fff;
+  }
+}
+
+.comosedice {
+  background-color: #3cc4cb;
+  min-height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  /* padding: 10rem; */
+}
+
+.sojohub {
+  background-color: #e29470;
+  min-height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  /* padding: 10rem; */
+}
+.favebus {
+  background-color: #21364b;
+  min-height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  /* padding: 10rem; */
+}
+
+.Neighbors {
+  background-color: #a47648;
+  min-height: 100vh;
+  overflow: hidden;
+  color: #fff;
 }
 
 .project {
@@ -648,13 +744,19 @@ hr.star-primary:after {
   flex-wrap: wrap;
 }
 
-.contact-details {
+.github-link {
   font-size: 2.4rem;
   text-shadow: 2px 2px 1px #1f1f1f;
   transition: transform 0.3s ease-out;
 }
 
-.contact-details:hover {
+.contact-details-ft {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details-ft:hover {
   transform: translateY(8px);
 }
 
@@ -706,12 +808,13 @@ footer was here
   text-align: left;
 }
 #resume {
-  margin: 1rem;
+  margin: auto;
   display: block;
   max-width: 20%;
 }
 
 strong {
+  margin-left: 15rem;
   font-weight: 700;
 }
 
@@ -720,7 +823,10 @@ strong {
     margin-top: 3rem;
     margin-bottom: 1rem;
   }
-
+  strong {
+    margin: 1rem auto;
+    font-weight: 700;
+  }
   .project-image {
     padding-top: 13vh;
   }
@@ -823,9 +929,9 @@ strong {
     flex-direction: column;
     text-align: center;
   }
-  #contact {
+  /* #contact {
     margin-bottom: 5rem;
-  }
+  } */
 }
 
 .articles {

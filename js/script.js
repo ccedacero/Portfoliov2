@@ -4,26 +4,6 @@ window.addEventListener("scroll", () => {
   bar.style.width = `${(pageYOffset / max) * 100}%`;
 });
 
-// var $button = document.querySelector('.button');
-// $button.addEventListener('click', function() {
-//   var duration = 0.3,
-//       delay = 0.08;
-//   TweenMax.to($button, duration, {scaleY: 1.6, ease: Expo.easeOut});
-//   TweenMax.to($button, duration, {scaleX: 1.2, scaleY: 1, ease: Back.easeOut, easeParams: [3], delay: delay});
-//   TweenMax.to($button, duration * 1.25, {scaleX: 1, scaleY: 1, ease: Back.easeOut, easeParams: [6], delay: delay * 3 });
-// });
-/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function () {
-//   var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementById("navbar").style.top = "0";
-//   } else {
-//     document.getElementById("navbar").style.top = "-50px";
-//   }
-//   prevScrollpos = currentScrollPos;
-// };
-
 // function setupTypewriter(t) {
 //   var HTML = t.innerHTML;
 
@@ -33,7 +13,7 @@ window.addEventListener("scroll", () => {
 //     tag = "",
 //     writingTag = false,
 //     tagOpen = false,
-//     typeSpeed = 100,
+//     typeSpeed = 150,
 //     tempTypeSpeed = 0;
 
 //   var type = function () {
