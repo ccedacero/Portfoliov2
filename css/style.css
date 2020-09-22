@@ -28,7 +28,7 @@ a.left:before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000000;
+  background-color: #fff;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
@@ -152,6 +152,32 @@ h2 {
   display: none;
 }
 
+#introbtn {
+  margin-top: 7rem;
+  /* box-shadow: 0px 1px 0px 0px #f0f7fa; */
+  background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+  background-color: #33bdef;
+  border-radius: 6px;
+  border: 1px solid #057fd0;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 24px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #5b6178;
+}
+
+#introbtn:hover {
+  background: linear-gradient(to bottom, #019ad2 55%, #33bdef 100%);
+  background-color: #019ad2;
+}
+#introbtn:active {
+  position: relative;
+  top: 1px;
+}
 /* // When resolution <= 1200px, hide full text and show short text */
 @media (max-width: 75em) {
   .short-text {
@@ -174,54 +200,60 @@ p {
   font-size: 2rem;
   /* text-align: justifynav; */
 }
+#introparagraph > p {
+  font-size: 4rem;
+}
+
 @media (min-width: 61.25em) {
   .comosedice {
     background-color: #3cc4cb;
     min-height: 120vh;
     overflow: hidden;
-    padding: 10rem;
     color: #fff;
+    padding: 10rem;
   }
 
   .sojohub {
     background-color: #e29470;
     min-height: 120vh;
     overflow: hidden;
-    padding: 10rem;
     color: #fff;
+    padding: 10rem;
   }
   .favebus {
     background-color: #21364b;
     min-height: 120vh;
     overflow: hidden;
-    padding: 10rem;
     color: #fff;
+    padding: 10rem;
+  }
+  .contact-links {
+    width: 47%;
   }
 }
-.comosedice {
+/* .comosedice {
   background-color: #3cc4cb;
-  height: 100vh;
+  height: 120vh;
   color: #fff;
 }
 
 .sojohub {
   background-color: #e29470;
-  height: 100vh;
+  height: 120vh;
   color: #fff;
 }
 .favebus {
   background-color: #21364b;
-  height: 100vh;
-  color: #fff;
-  /* padding: 10rem; */
-}
+  height: 120vh;
+  color: #fff; */
+/* } */
 
 .description {
   margin: auto;
   line-height: 3rem;
   text-align: center;
   text-justify: auto;
-  /* max-width: 68%; */
+  max-width: 100%;
   padding-bottom: 2.5rem;
   font-weight: 300;
 }
@@ -242,7 +274,7 @@ p {
 }
 
 .skill-card {
-  /* margin-top: 3rem; */
+  margin-top: 3rem;
   border-radius: 4px;
   border: 2px solid #fff;
   display: inline-block;
@@ -293,14 +325,15 @@ a {
 .nav {
   display: flex;
   justify-content: flex-end;
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   /* box-shadow: 0 2px 0 rgba(0, 0, 0, 0.6); */
   z-index: 10;
   /* background-color: var(--main-blue); */
-  /* background-color: #00adb5; */
+
+  background-color: #000000;
   /* padding: 20px; */
   font-weight: 700;
 }
@@ -350,21 +383,37 @@ a {
   width: 100%;
   height: 100vh;
   text-align: center;
+  color: #f0f0f0;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url("../portfolio.jpg") no-repeat;
+  background-size: cover;
 }
 
 #about-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   text-align: center;
-  padding-top: 12rem;
+  padding-top: 6rem;
   grid-gap: 4rem;
   width: 100%;
   margin: 0 auto;
 }
 
 #about-section p {
-  line-height: 5rem;
-  font-size: 3rem;
+  line-height: 4rem;
+  font-size: 2rem;
+}
+
+blockquote {
+  /* border-left: 5px solid #795548; */
+  color: #795548;
+  font-size: 125%;
+  font-weight: 400;
+  /* margin: 20px 0; */
+  padding-left: 1.5rem;
+  max-width: 85%;
+  text-align: left;
+  margin: auto;
 }
 /* .class-landing {
     display: grid;
@@ -387,7 +436,7 @@ a {
   border-radius: 50%;
   width: auto;
   margin: 0 auto;
-  padding-bottom: 4rem;
+  /* padding-bottom: 4rem; */
 }
 /* Project Section */
 
@@ -488,6 +537,28 @@ hr.star-primary:after {
   .projects-grid {
     grid-template-columns: 1fr;
   }
+  .comosedice {
+    background-color: #3cc4cb;
+    min-height: 100vh;
+    overflow: hidden;
+    color: #fff;
+    /* padding: 10rem; */
+  }
+
+  .sojohub {
+    background-color: #e29470;
+    min-height: 100vh;
+    overflow: hidden;
+    color: #fff;
+    /* padding: 10rem; */
+  }
+  .favebus {
+    background-color: #21364b;
+    min-height: 100vh;
+    overflow: hidden;
+    color: #fff;
+    /* padding: 10rem; */
+  }
 }
 
 .project {
@@ -545,7 +616,9 @@ hr.star-primary:after {
 }
 
 /* Contact Section */
-
+.fa-heart:before {
+  color: red;
+}
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -553,8 +626,9 @@ hr.star-primary:after {
   align-items: center;
   text-align: left;
   width: 100%;
-  /* height: 80vh; */
+  height: 100vh;
   padding: 0 2rem;
+  margin-top: 6rem;
   /* background: var(--main-gray); */
 }
 
@@ -569,7 +643,6 @@ hr.star-primary:after {
 .contact-links {
   display: flex;
   justify-content: center;
-  /* width: 42%; */
   max-width: 980px;
   margin-top: 3rem;
   flex-wrap: wrap;
@@ -592,7 +665,8 @@ footer {
   display: flex;
   justify-content: space-evenly;
   padding: 2rem;
-  background-color: var(--main-blue);
+  /* background-color: var(--main-blue); */
+  background-color: black;
   border-top: 4px solid var(--main-white);
 }
 
@@ -626,12 +700,19 @@ footer was here
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
-  width: 85%;
+  width: 65%;
   max-width: 1280px;
-  margin: 0 auto;
-  margin-bottom: 6rem;
-  /* border: 1px solid red; */
-  text-align: center;
+  margin: 5rem auto;
+  text-align: left;
+}
+#resume {
+  margin: 1rem;
+  display: block;
+  max-width: 20%;
+}
+
+strong {
+  font-weight: 700;
 }
 
 @media (max-width: 28.75em) {
@@ -641,7 +722,7 @@ footer was here
   }
 
   .project-image {
-    padding-top: 7vh;
+    padding-top: 13vh;
   }
   .nav {
     justify-content: center;
@@ -705,7 +786,7 @@ footer was here
   }
 
   p {
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 2rem;
     text-align: center;
   }
@@ -803,7 +884,7 @@ input[type="submit"]:hover {
   max-width: 4.5rem;
 }
 #logos_div {
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 .submit-div {
   text-align: center;

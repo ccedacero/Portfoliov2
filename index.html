@@ -25,6 +25,10 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
 </head>
 
 <body>
@@ -44,22 +48,21 @@
 
   <!-- Star Landing -->
   <section id="welcome-section" class="welcome-section">
-      <span class="full-text">Howdy! I'm Cristian</span>
-      <span class="short-text">Howdy!<br>I'm Cristian</span>
+    <span class=" animate__animated animate__bounceInUp full-text">Hello! I'm Cristian</span>
+      <span class="short-text">Hello!<br>I'm Cristian</span>
       <!-- <p>A Front-End-Developer</p> -->
       <hr class="star-light">
-      <!-- ::after -->
       </hr>
       <!-- <span class="skills">Dev - Runner - RPCV</span> -->
       <!-- <h2>About me</h2> -->
-      <div class="intro-grid">
-        <p>I'm a software engineer that enjoys building solutions to improve people's lives. On my free time, you can find me enjoying the great outdoors🏃‍♂️
+      <div id="introparagraph" class="intro-grid">
+        <p>I'm a software engineer that enjoys building solutions to improve people's lives. 
+          <br><button id="introbtn"><a href="#comosedice">Projects</a></button>
         </p>
-      </div>
   </section>
-  </hr>
+  <!-- </hr> -->
   </section>
-  <section class="comosedice">
+  <section id="comosedice" class="comosedice">
     <div class="projects-grid">
 
         <div class>
@@ -81,6 +84,8 @@
             <span class="skill-card">Charts.js</span>
           </div>
             <p class="btn-paragraph">
+              <a id="profile-link" href="https://github.com/ccedacero" target="_blank" class="btn contact-details"><i
+                class="fab fa-github"></i> GitHub</a><br>      
               <a class="description-btn" target="_blank" href="https://www.youtube.com/watch?v=zymhOk7uurQ">VIEW DEMO</a>
             </p>
             </div>
@@ -108,6 +113,8 @@ applications, interviews and allowing them to connect with other engineers throu
               <span class="skill-card">Charts.js</span>
             </div>
             <p class="btn-paragraph">
+              <a id="profile-link" href="https://github.com/ccedacero" target="_blank" class="btn contact-details"><i
+                class="fab fa-github"></i> GitHub</a><br>      
               <a class="description-btn" target="_blank" href="https://www.youtube.com/watch?v=zymhOk7uurQ">VIEW DEMO</a>
             </p>
             
@@ -137,52 +144,62 @@ applications, interviews and allowing them to connect with other engineers throu
               <span class="skill-card">Charts.js</span>
             </div>
             <p class="btn-paragraph"> 
+              <a id="profile-link" href="https://github.com/ccedacero" target="_blank" class="btn contact-details"><i
+                class="fab fa-github"></i> GitHub</a><br>      
               <a class="description-btn" style="background-color: #CE672D" target="_blank" href="https://www.youtube.com/watch?v=zymhOk7uurQ">VIEW DEMO</a>
             </p>
             
             </div>
           </div>
   </section>
+  
   <!--  End Project Section -->
   <!--  Start About Section -->
   <section id="about-section" class="about-landing">
     <div class="about-txt">
       <span class="full-text">About me</span>
       <span class="short-text">About me</span>
-      <!-- <p>A Front-End-Developer</p> -->
       <hr class="star-light">
-      <!-- ::after -->
       </hr>
-      <!-- <span class="skills">Dev - Runner - RPCV</span> -->
-      <!-- <h2>About me</h2> -->
       <img class="round" src="./images/me.png" alt="cristian cedacero portrait">
+      <div id="logos_div">
+        <!-- <h3>Stuff I've written</h3> -->
+      <a href="https://dev.to/ccedacero" target="_blank">
+      <img id="devto_logo" src="./devto.svg" >
+      </a>
+      <a href="https://medium.com/@cristian.cedacero" target="_blank">
+      <img id="medium_logo" src="./monogram-medium.svg"">
+      </a>     
+    </div>
+    <blockquote>
+      <h2>
+        I'm a software developer with a passion to help improve people's lives through code.
+      </h2>
+    </blockquote>
       <div class="about-grid">
         <div>
-        <p>Hi! My name is Cristian and I'm a software developer, avid runner, and lifelong volunteer. I've always
-          enjoyed working to help others, and after college I served as a Peace Corps volunteer in Guatemala.
-          Truly the "toughest job you'll ever love",my job included training teachers, building classrooms and hand
-          washing stations, and running away from packs of street dogs.
-        </p>
-        <div id="logos_div">
-          <h3>Stuff I've written</h3>
-        <a href="https://dev.to/ccedacero" target="_blank">
-        <img id="devto_logo" src="./devto.svg" >
-        </a>
-        <a href="https://medium.com/@cristian.cedacero" target="_blank">
-        <img id="medium_logo" src="./monogram-medium.svg"">
-        </a>
+          <p> I've always
+            enjoyed giving back to my community and helping others. After college I served as a Peace Corps volunteer in Guatemala.
+            Truly the "toughest job you'll ever love", my job included training teachers, building classrooms and hand
+            washing stations, and running away from packs of street dogs.</p>
+            <br>
+            <p>During my time with the Peace Corps headquarters, I discovered that I could use my IT knowledge to
+              automate processes and help make people's lives easier. I saw the awe that technology brings to
+              remote communities and the profound impact it can have.
+            </p>
+        </div>
+        <p>
+          This led to the realization that I could combine my life long passion for tinkering with computers and helping
+      others to pursue a career in software development. With software engraved in all aspects of
+      our lives, there is no better way to make a difference than writing the code that will
+      shape our future.
+      <br><strong>Resume</strong>
+      <a href="https://medium.com/@cristian.cedacero" target="_blank">
+        <img id="resume" src="./resume.svg"">
+        </a> 
+      </p>
       </div>
-      </div>
-        <p>During my time abroad and at Peace Corps headquarters, I discovered that I could use my IT knowledge to
-          automate and improve processes and help make people's lives easier. I saw the awe that technology brings to
-          remote communities and the profound impact it can have.
-          <br><br>
-          This led me to realize that I could combine my life long passion for tinkering with technology and helping
-          others and transition to a career in software development. With software engraved in all aspects of
-          our lives, there is no better way to make a difference and reach millions than writing the code that will
-          shape our future.
-          </p>
-      </div>
+      
     </section>
     <!--  End About Section -->
   
@@ -219,8 +236,8 @@ applications, interviews and allowing them to connect with other engineers throu
         Twitter</a>
       <div class="copy"> 
 
-      &copy; Created by
-      <a href="#" target="_blank">Cristian Cedacero <i class="fas fa-code"></i></a>
+      &copy; Made with <i class="fas fa-heart"></i> by 
+      <a href="#" target="_blank">Cristian Cedacero</a>
     </p>
   </div>
   </div>
