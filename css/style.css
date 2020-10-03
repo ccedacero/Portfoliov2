@@ -88,19 +88,19 @@ html {
   } */
 @media (max-width: 61.25em) {
   html {
-    font-size: 58%;
+    font-size: 60%;
   }
 }
 
 @media (max-width: 41.7em) {
   html {
-    font-size: 4%;
+    font-size: 58%;
   }
 }
 
 @media (max-width: 28.75em) {
   html {
-    font-size: 38%;
+    font-size: 43%;
   }
 }
 
@@ -115,7 +115,7 @@ html {
 
 body {
   background: #eeeeee;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   font-size: 1.8rem; /*18px*/
   line-height: 1.42;
   /* color: var(--main-white); */
@@ -198,7 +198,7 @@ h2 {
 }
 .full-text {
   font-size: 6rem;
-  font-family: "ObjectSans", "Montserrat", sans-serif;
+  font-family: "ObjectSans", sans-serif;
   text-align: center;
   font-weight: 500;
   border-bottom: solid #3cc4cb;
@@ -206,7 +206,7 @@ h2 {
 
 .short-text {
   font-size: 4rem;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   text-align: center;
   font-weight: 700;
   border-bottom: solid #3cc4cb;
@@ -325,7 +325,7 @@ p {
 .description {
   margin: auto;
   line-height: 3rem;
-  text-align: center;
+  text-align: left;
   text-justify: auto;
   max-width: 100%;
   padding-bottom: 2.5rem;
@@ -436,7 +436,7 @@ a {
   cursor: pointer;
   margin-right: auto;
   color: #00adb5;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   font-size: 2.2rem;
   padding-left: 2rem;
   text-transform: uppercase;
@@ -899,6 +899,7 @@ strong {
   }
   .description {
     line-height: 4rem;
+    font-size: 2.5rem;
   }
   #about-section p {
     font-size: 2.8rem;
@@ -927,7 +928,7 @@ strong {
   }
   .short-text {
     font-size: 4rem;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
     text-align: center;
     font-weight: 700;
   }
